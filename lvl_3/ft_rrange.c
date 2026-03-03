@@ -15,9 +15,9 @@ int  *ft_range(int start, int end)
     {
         while (range > 0)
         {
-            liste[i] = start;
+            liste[i] = end;
             i++;
-            start ++;
+            end --;
             range--;
         }   
     }
@@ -25,9 +25,9 @@ int  *ft_range(int start, int end)
     {
         while (range > 0)
         {
-            liste[i] = start;
+            liste[i] = end;
             i++;
-            start --;
+            end ++;
             range--;
         }   
     }
@@ -35,7 +35,7 @@ int  *ft_range(int start, int end)
 }
 int main ()
 {
-    int *s = ft_range(0, -3);
+    int *s = ft_range(-1, 2);
     int i = 0;
     while (i < 4)
     {
