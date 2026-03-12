@@ -1,6 +1,7 @@
 #include "ft_list.h"
 #include <stdio.h>
 #include <stdlib.h>
+
 int	ft_list_size(t_list *begin_list)
 {
     int i = 0;
